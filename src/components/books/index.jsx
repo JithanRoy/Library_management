@@ -93,13 +93,6 @@ const BooksComponent = () => {
             Add Book
           </Button>
         </div>
-        {/* {books.map((eachBook) => (
-          <BookCard
-            key={eachBook.id}
-            eachBook={eachBook}
-            handleEditBook={handleEditBook}
-          />
-        ))} */}
         {currentBooks.map((eachBook) => (
           <BookCard
             key={eachBook.id}

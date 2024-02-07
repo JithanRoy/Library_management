@@ -12,11 +12,13 @@ const { Header, Sider, Content } = Layout;
 export default function CustomLayout({ children }) {
   const [collapsed, setCollapsed] = useState(false);
   const [activeKey, setActiveKey] = useState("1");
+
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
   const handleMenuClick = (e) => {
+    console.log(e.key);
     setActiveKey(e.key);
   };
 
